@@ -10,6 +10,9 @@ const port = 4500 || process.env.PORT
 app.use(cors())
 const server = http.createServer(app);
 const io = socketIO(server);
+app.get("/",(req,res)=>{
+    res.send("Server")
+})
 
 io.on("connection", (socket)=>{
     
