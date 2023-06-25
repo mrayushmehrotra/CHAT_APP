@@ -79,7 +79,7 @@ const send =()=>{
 
         </ReactScrollToBottom>
         <div className={styles.inputBox}>
-          <input type="text" id="chatInput" className={styles.chatInput} />
+          <input onKeyPress={(event)=>event.key === "Enter"? send(): null} type="text" id="chatInput" className={styles.chatInput} />
           <button onClick={send} className={styles.sendBtn}><h3>Send</h3></button>
         </div>
       </div>
