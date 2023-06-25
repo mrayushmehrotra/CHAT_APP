@@ -10,7 +10,7 @@ const sendUser =()=>{
   user = document.getElementById("joinInput").value
   document.getElementById("joinInput").value=""
 }
-const join = () => {
+const Join = () => {
   const [name, setname] = useState("")
 
   return (
@@ -20,6 +20,7 @@ const join = () => {
           src={Logo}
           width={100}
           height={100}
+          alt="logo"
         />
         <h1 className={styles.title}>ICHAT</h1>
         <input onChange={(e)=>setname(e.target.value)} placeholder="Enter Your Name" type="text" id="joinInput" className={styles.joinInput} />
@@ -33,5 +34,5 @@ const join = () => {
   );
 }
 
-export default join;
+export default Join;
 export {user}
