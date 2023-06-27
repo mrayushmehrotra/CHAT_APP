@@ -7,7 +7,7 @@ import ReactScrollToBottom from "react-scroll-to-bottom";
 import { useRouter } from 'next/router'
 
 
-const ENDPOINT = "https://ichat-two.vercel.app//:4500/";
+const ENDPOINT = "http://localhost:4500/";
 
 let socket;
 

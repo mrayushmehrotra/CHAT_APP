@@ -3,6 +3,7 @@ import styles from "../styles/Join.module.css";
 import Image from 'next/image';
 import Logo from "./joinlogo.png";
 import Link from 'next/link';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 let user;
 
@@ -22,12 +23,12 @@ const Join = () => {
           height={100}
           alt="logo"
         />
-        <h1 className={styles.title}>ICHAT</h1>
+        <h1 className>ICHAT</h1>
         <input onChange={(e)=>setname(e.target.value)} placeholder="Enter Your Name" type="text" id="joinInput" className={styles.joinInput} />
         <Link 
         onClick={(event)=> !name ?event.preventDefault():null} 
         href="/Chat">
-          <button onClick={sendUser} className={styles.joinBtn}>Join</button>
+          <button onClick={sendUser} className={` ${styles.joinBtn}`}>Join</button>
         </Link>
       </div>
     </div>

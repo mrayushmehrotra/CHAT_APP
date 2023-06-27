@@ -1,56 +1,66 @@
-  @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
-  .title{
-    color:white;
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.title {
+  color: crimson;
+  font-family: cursive;
+  
+
 }
 
-.JoinPage{
-    background-color:rgb(34, 32, 32);
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family: 'Roboto', cursive;
+.JoinPage {
+  background-color: rgb(34, 32, 32);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 4px;
 }
 
-.JoinContainer{
-    border: 2px solid white;
-    height:50%;
-    width:50%;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
+.JoinContainer {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Added to align center column-wise */
+  gap: 20px; /* Added to create space between elements */
 }
 
-.JoinContainer > img{
-    width: 10vmax;
+.JoinContainer > img {
+  width: 10vmax;
 }
 
-.JoinContainer > h1{
-    color:white;
-    font-size: 2vmax;
-    width: 30px;
-    border-bottom: 0.2vmax solid white;
+.JoinContainer > h1 {
+  color: white;
+  font-size: 2vmax;
+  width: 30px;
+  border-bottom: 0.2vmax solid white;
 }
 
 .joinInput {
-    width:25vmax;
-    padding:1.5vmax;
-    border:none;
-    outline:none;
-    font-size:1.2vmax;
+  width: 25vmax;
+  padding: 1.5vmax;
+  outline: none;
+  border-right: none;
+  font-size: 1.2vmax;
+  background-color: rgb(31, 29, 29);
+  color: crimson;
 }
 
-.joinBtn{
-    background-color:crimson;
-    color:white;
-    font-family:cursive;
-    border:none;
-    outline:none;
-    width:1.5vmax;
+.joinBtn {
+  background-color: rgb(34, 32, 32) !important;
+  outline: none;
+  height:4vmax;
+  width:4vmax;
+  font-family: 'Grand Hotel', cursive;
+  border-radius: 50% !important;
+  box-shadow: none !important;
 }
 
-.joinBtn:hover{
-    background-color:crimson;
-    transition:0.1s;
+.joinBtn:hover {
+  background-color: crimson !important;
+  transition: 0.1s;
+  color:white;
 }
